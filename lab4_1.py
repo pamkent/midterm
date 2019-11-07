@@ -32,10 +32,10 @@ def is_underage():
    
    if user_age >= 21:
       print("You may drink, smoke, and drive if you wish!")
-	  #Got rid of extra code
+    #Got rid of extra code
    elif user_age >= 18:
       print("You may smoke and drive!")
-	  #Got rid of extra code
+   #Got rid of extra code
    elif user_age >= 16:
       print("You may drive!")
    else:
@@ -49,7 +49,7 @@ def countdown():
    count = 10
    while count > 0:
       print(count)
-	  count = count - 1
+      count = count - 1
 	   
    return None
 
@@ -59,14 +59,14 @@ def guessing_game(num):
    while count < 10:   
       user_input = int(input("Guess a number between 1 and 20"))
     #Got rid of extra prompt at end 
-	  if user_input = 'q':
+      if user_input = 'q':
          print("Goodbye, quitter!")
-		 return None	
+         return None	
 	#Added input here to catch integer guesses 	 	  
       user_input = int(user_input):
       if user_input == num:
          print("You win!")
-	     win = True 	
+	 win = True 	
       elif user_input > num:
          print("Too high!")
       elif user_input < num: 
