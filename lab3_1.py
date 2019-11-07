@@ -1,50 +1,34 @@
+#Got rid of blank lines on all 
 def sums():
    
-  	
-	first_sum = 2 + 2
-
-	first_sum = first_sum * 10
-
-	secret = first_sum + 2
-
-	return secret
-
+   first_sum = 2 + 2
+   first_sum = first_sum * 10
+   secret = first_sum + 2
+   
+   return secret
 
 def string_manip(first_name):
-
-   	name = first_name
-
-   	all_caps = name.upper()
-
-   	all_lowercase = name.lower()
-
-   	first_five_letters = name[0:5]
-
-   	last_two_letters = name[-2:]
-
-   	return [all_caps, all_lowercase, first_five_letters, last_two_letters]
+   
+   name = first_name
+   all_caps = name.upper()
+   all_lowercase = name.lower()
+   #Got rid of the 0
+   first_five_letters = name[:5]
+   last_two_letters = name[-2:]
+   
+   return [all_caps, all_lowercase, first_five_letters, last_two_letters]
 
 def greeter_bot():
-
-   	fname = input('What is you name?')
-
-	name = fname
-	
-	print('Hello, ' +  name) 
-	
-  
-
+   
+   fname = input("What is you name?")
+   #Added format so unittest works
+   print("Hello, {}".format(fname)) 
+	 
 def temp_calculator():
-
-   	# The formula is C = (F - 32) * (5/9)
- 
-   	inp = input('Enter a Celsius Temperature: ')
-
-	cel = float(inp)
-
-	fahr = (cel + 32) * 5 / 9
-
-        print(fahr)
+   #Wrapped the input in float function and fixed indent 
+   fahr = float(input("Enter a Celsius temperature: "))
+   cel = (fahr - 32) * 5/9
+   print(cel)
 
 def equitable_bill_splitter():
    

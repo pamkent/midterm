@@ -1,82 +1,80 @@
 def is_even():
-   # Notice, this will give us an error if we don't enter an integer
-   # in Everyday Coding, we'll learn how to catch errors like this.
+   
    user_data = int(input("Please give me an integer. "))
    out = None
-   
+   #Set to true or false instead of print
    if user_data%2 == 0:
-      print("This is even")
+      out = True	   
    else:
-      print("This is odd")
-    
-   # This is for the test.
-   return out 
+      out = False
 
+   return out
+     
+#Reorganized so the conditions execute in correct order
 def multi_condition():
-   # Notice, this will give us an error if we don't enter an integer
-   # in Everyday Coding, we'll learn how to catch errors like this.
+   
    user_data = int(input("Please give me an integer. "))
 
-   	if user_data == 0:
-	   print("Don't be such a zero!")
-	elif user_data%3 == 0:
-	   print("Positively odd!")
-	elif user_data%2 == 0:
-	   print("Even Steven!")
-	elif user_data < 0:
-	   print("Negative Nelly!")
+   if user_data < 0:
+      print("Negative Nelly!")
+   elif user_data == 0:
+      print("Don't be such a zero!")
+   elif user_data % 2 == 0:
+      print("Even Steven!")
+   else:
+      print("Positively odd!")		  	   	  		  
    
    return None
-
 
 def is_underage():
    
    user_age = int(input("How old are you?")
    
-	if user_age >= 21:
-	   print("You may drink, smoke, and drive if you wish!")
-	elif user_age >= 18 and user_age < 21:
-	   print("You may smoke and drive!")
-	elif user_age >= 16 and user_age < 18:
-	   print("You may drive!")
-	else:
-	   print("Enjoy you bike, kid!")
+   if user_age >= 21:
+      print("You may drink, smoke, and drive if you wish!")
+	  #Got rid of extra code
+   elif user_age >= 18:
+      print("You may smoke and drive!")
+	  #Got rid of extra code
+   elif user_age >= 16:
+      print("You may drive!")
+   else:
+      print("Enjoy you bike, kid!")
   
-   
-   # So the tests fail and they don't throw errors
    return None
 
+#Replaced original with while loop to make it easier
 def countdown():
    
-	countdown = 11
-	for iterver in [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]:
-	   countdown = countdown -1 
-	   print(countdown)
+   count = 10
+   while count > 0:
+      print(count)
+	  count = count - 1
 	   
-
-   # So the tests fail and they don't throw errors
    return None
 
 def guessing_game(num):
-  
-    	user_input = int(input("Guess a number between 1 and 20"))
-        for i in range(10):
-	   if user_input ==  num:
-	      print("You win!")
-	      win = True
-	   elif user_input > num:
-	      print("Too high!")
-           elif user_input < num: 
-	      print("Too low!")
-	   else:
-	      print("You lose!")   
-	      win = False
-	input("Press 'q' to quit")
-	mode = input ()
-	   if mode == 'q':
-	      print("Goodbye, quitter!")
+#Added a while loop instead of for loop  
+   count = 0
+   while count < 10:   
+      user_input = int(input("Guess a number between 1 and 20"))
+    #Got rid of extra prompt at end 
+	  if user_input = 'q':
+         print("Goodbye, quitter!")
+		 return None	
+	#Added input here to catch integer guesses 	 	  
+      user_input = int(user_input):
+      if user_input == num:
+         print("You win!")
+	     win = True 	
+      elif user_input > num:
+         print("Too high!")
+      elif user_input < num: 
+         print("Too low!")
+      else:
+         print("You lose!")   
+         win = False
+    #Not sure if this should go here, but added to keep track of guesses	  
+      count += 1
    
-
-
-   # So the tests fail and they don't throw errors
    return None
