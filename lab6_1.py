@@ -20,8 +20,9 @@ def keyword_counter(word_list, logic, test):
    if not logic:
       with open(test, "r") as f:
          text = f.read().replace("\n", " ")
-results = {}
-for word in word_list:
-   results[word] = text.count(word)
-return results
+   results = {}
+   for word in word_list:
+      results[word] = text.count(word)
+   
+   return results
 
