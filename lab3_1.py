@@ -20,7 +20,7 @@ def string_manip(first_name):
 
 def greeter_bot():
    
-   fname = input("What is you name?")
+   fname = input("What is your name?")
    #Added format so unittest works
    print("Hello, {}".format(fname)) 
 	 
