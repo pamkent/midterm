@@ -28,7 +28,7 @@ def multi_condition():
 
 def is_underage():
    
-   user_age = int(input("How old are you?")
+   user_age = int(input("How old are you?"))
    
    if user_age >= 21:
       print("You may drink, smoke, and drive if you wish!")
