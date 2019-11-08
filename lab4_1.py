@@ -59,11 +59,11 @@ def guessing_game(num):
    while count < 10:   
       user_input = int(input("Guess a number between 1 and 20"))
     #Got rid of extra prompt at end 
-      if user_input = 'q':
+      if user_input == 'q':
          print("Goodbye, quitter!")
          return None	
 	#Added input here to catch integer guesses 	 	  
-      user_input = int(user_input):
+      user_input = int(user_input)
       if user_input == num:
          print("You win!")
 	 win = True 	
