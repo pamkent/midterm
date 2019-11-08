@@ -39,7 +39,7 @@ def is_underage():
    elif user_age >= 16:
       print("You may drive!")
    else:
-      print("Enjoy you bike, kid!")
+      print("Enjoy your bike, kid!")
   
    return None
 
@@ -66,13 +66,13 @@ def guessing_game(num):
       user_input = int(user_input)
       if user_input == num:
          print("You win!")
-	 win = True 	
+         win = True 	
       elif user_input > num:
-         print("Too high!")
+         print("Too High!")
       elif user_input < num: 
-         print("Too low!")
+         print("Too Low!")
       else:
-         print("You lose!")   
+         print("You Lose!")   
          win = False
     #Not sure if this should go here, but added to keep track of guesses	  
       count += 1
